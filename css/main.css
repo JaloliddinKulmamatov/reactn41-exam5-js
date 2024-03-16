@@ -66,44 +66,68 @@ a {
   display: grid;
   margin-bottom: 70px;
 }
+.wrapper .wrapper__card img {
+  max-width: 228px;
+  width: 100%;
+}
 
-.main__buttom-1 {
+.main__buttom-1, .main__buttom-2 {
   margin-bottom: 83px;
 }
-.main__buttom-1 .main__buttom__left ul {
+.main__buttom-1 .main__buttom__left, .main__buttom-2 .main__buttom__left {
+  padding: 60px 0;
+}
+.main__buttom-1 .main__buttom__left ul, .main__buttom-2 .main__buttom__left ul {
   display: grid;
   margin-bottom: 24px;
 }
-.main__buttom-1 .main__buttom__left ul li {
+.main__buttom-1 .main__buttom__left ul li, .main__buttom-2 .main__buttom__left ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
 }
-.main__buttom-1 .main__buttom__left ul li p {
+.main__buttom-1 .main__buttom__left ul li p, .main__buttom-2 .main__buttom__left ul li p {
   margin-bottom: 0;
 }
-.main__buttom-1 .main__buttom__left ul li img {
+.main__buttom-1 .main__buttom__left ul li img, .main__buttom-2 .main__buttom__left ul li img {
   max-width: 16px;
   width: 100%;
 }
-.main__buttom-1 .main__buttom__left h3 {
+.main__buttom-1 .main__buttom__left h3, .main__buttom-2 .main__buttom__left h3 {
   font-weight: 600;
   font-size: 32px;
   line-height: 42px;
   margin-bottom: 34px;
 }
-.main__buttom-1 .main__buttom__left p {
+.main__buttom-1 .main__buttom__left p, .main__buttom-2 .main__buttom__left p {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   color: #454F5B;
   margin-bottom: 24px;
 }
-
-.main__buttom__right img {
+.main__buttom-1 .main__buttom__right img, .main__buttom-2 .main__buttom__right img {
   max-width: 770px;
   width: 100%;
+}
+
+.main__input {
+  padding: 64px;
+  background-color: #F2F8FF;
+  text-align: center;
+}
+.main__input h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 34px;
+  margin-bottom: 24px;
+}
+.main__input p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
 }
 
 @media (min-width: 620px) {
@@ -123,15 +147,16 @@ a {
   }
 }
 @media (min-width: 995px) {
-  .main__buttom-1 {
+  .main__buttom-1, .main__buttom-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 30px;
   }
-  .main__buttom-1 .main__buttom__left {
+  .main__buttom-1 .main__buttom__left, .main__buttom-2 .main__buttom__left {
     width: 50%;
   }
-  .main__buttom-1 .main__buttom__right {
+  .main__buttom-1 .main__buttom__right, .main__buttom-2 .main__buttom__right {
     width: 50%;
   }
 }
