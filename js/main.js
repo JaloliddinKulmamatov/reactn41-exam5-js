@@ -20,7 +20,7 @@ function createCard(data) {
         card.classList.add("card")
         card.innerHTML = `
         <h3>${title}</h3>
-
+        <img src="${JSON.parse(images)[0]}" alt="">
         <p>${price}</p>
         `
         card.addEventListener("click",() => singleRoute(id))
