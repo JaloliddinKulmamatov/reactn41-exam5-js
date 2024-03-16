@@ -1,0 +1,124 @@
+.header__begin {
+    background-color:  #454F5B;
+    color: #fff;
+
+}
+
+.header__top {
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+.main__begin {
+    h2 {
+            font-size: 28px;
+            line-height: 42px;
+            font-weight: 600;
+            span {
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 300;
+            }
+        }
+    .main__begin__ul {
+    display: flex;
+    margin-bottom: 40px;
+
+    a {
+        color: #9c9a9a;
+        transition: 0.4s;
+
+        &:hover {
+            color: #141414;
+        }
+
+    }
+
+
+}
+}
+
+.wrapper {
+    display: grid;
+    margin-bottom: 70px;
+}
+
+.main__buttom-1 {
+    margin-bottom: 83px;
+    .main__buttom__left {
+            ul {
+                display: grid;
+                margin-bottom: 24px;
+    
+                li {
+                    display: flex;
+                    gap: 12px;
+    
+                    p {
+                        margin-bottom: 0;
+                    }
+    
+                    img {
+                        max-width: 16px;
+                        width: 100%;
+                    }
+                }
+    
+            }
+    
+            h3 {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 42px;
+                margin-bottom: 34px;
+            }
+    
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 32px;
+                color: #454F5B;
+                margin-bottom: 24px;
+            }
+        }
+}
+
+
+.main__buttom__right{
+    img {
+        max-width: 770px;
+        width: 100%;
+    }
+}
+
+
+@media (min-width:620px) {
+    .header__top {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:560px) {
+    .main__buttom__left {
+        ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        }
+  
+    }
+}
+
+@media (min-width:995px) {
+    .main__buttom-1 {
+        display: flex;
+        .main__buttom__left {
+            width: 50%;
+        }
+        .main__buttom__right {
+            width: 50%;
+        }
+    }
+}

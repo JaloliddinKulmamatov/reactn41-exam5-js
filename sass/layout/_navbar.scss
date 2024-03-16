@@ -1,0 +1,45 @@
+nav {
+    box-shadow: 0px -1px 0px 0px #C4CDD5 inset;
+    padding: 10px 0;
+
+}
+
+.nav {
+    img {
+        margin-bottom: 10px;
+    }
+    .nav__ul {
+        display: none;
+    }
+
+    .nav__contact {
+        li {
+            display: flex;
+            margin-bottom: 10px;
+            gap: 10px;
+            align-items: center;
+            .nav__tell {
+                width: 20px;
+            }
+        }
+        
+    }
+}
+
+@media (min-width:420px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav__contact {
+        display: flex;
+        gap: 24px;
+    }
+
+}
+
+@media (min-width:610px) {
+    .nav__ul {
+        display: flex;
+    }
+}
