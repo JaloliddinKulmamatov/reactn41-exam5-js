@@ -1,4 +1,5 @@
 @use "./base/reset";
 @use "./base/containers";
 @use "./pages/home";
-@use "./layout/navbar.scss"
+@use "./layout/navbar.scss";
+@use "./components/loading"
