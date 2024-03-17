@@ -1,1 +1,5 @@
-@use "./components/loading"
+@use "./components/loading";
+@use "./layout/navbar";
+@use "./base/reset";
+@use "./base/containers";
+@use "./pages/pages";

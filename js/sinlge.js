@@ -1,12 +1,12 @@
 const API__URL = "https://dummyjson.com/products"
 const loading = document.querySelector(".loading")
-const productCard = document.querySelector(".product-card");
+const productCard = document.querySelector(".main__products");
 
 async function fetchData(api) {
     let data = await fetch(api)
     data 
     .json()
-    .then(res => createCard(res.products))
+    .then(res => (res))
     .catch(err => console.log(err))
     .finally(() => {
         loading.style.display = "none"
@@ -27,9 +27,15 @@ async function fetchSinglePage(api) {
 fetchSinglePage(API__URL)
 
 function singularUser(product) {
-    console.log(product);
+    console.log(product.images);
     let {image} = product
     productCard.src = image
+    productCard.innerHTML = `
+    <div>
+      <img src="${product.images[0]}" alt="abc">
+    </div>
+    
+    `
 }
 
 

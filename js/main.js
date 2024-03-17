@@ -36,5 +36,5 @@ function createCard(data) {
 }
 
 function singleRoute(id) {
-    window.open(`/pages/single.html?id=${id}`, "_self")
+    window.open(`/single.html?id=${id}`, "_self")
 }

@@ -1,0 +1,30 @@
+.main__begin {
+    h2 {
+        font-size: 28px;
+        line-height: 42px;
+        font-weight: 600;
+
+        span {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 300;
+        }
+    }
+
+    .main__begin__ul {
+        display: flex;
+        margin-bottom: 40px;
+
+        a {
+            color: #9c9a9a;
+            transition: 0.4s;
+
+            &:hover {
+                color: #141414;
+            }
+
+        }
+
+    }
+}
+
