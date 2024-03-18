@@ -19,13 +19,17 @@ function createCard(data) {
     let card = document.createElement("div");
     card.classList.add("wrapper__card");
     card.innerHTML = `
+    <div class="wrapper__card__top">
       <img src="${images[0]}" alt="${brand}">
-      <p>${rating}</p>
+    </div>
+    <div class="wrapper__card__button">
+      <p class="rating">${rating}</p>
       <h3>${title}</h3>
       <span>
-      <p>${price}$ </p>
-      <p>${discountPercentage}% </p>
+      <p class="price">${price}$ </p>
+      <p class="discount">${discountPercentage}% </p>
       </span>
+    </div>
     `;
     
 
